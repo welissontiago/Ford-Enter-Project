@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site de estudos da ford">
+  <title>Pagina Principal</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header-bg">
+    <div class="header">
+      <a href="./"><img class="logo" src="/img/logo/ford_logo_cortada.png" alt="logo"></a>
+      <nav aria-label="primaria">
+        <ul class="header-menu">
+          <li><a href="/">Veículos</a></li>
+          <li><a href="/">Ofertas</a></li>
+          <li><a href="/">Comprar</a></li>
+          <li><a href="/">Serviços</a></li>
+          <li><a href="/">FordPro</a></li>
+          <li><a href="/">Iniciar Sessão</a></li>
+          <li>
+            <form class="form-busca" action="/buscar" method="get">
+              <input type="text" id="busca" name="q" placeholder="Pesquisar Veiculos" />
+              <button class="btn-busca" type="submit" aria-label="Buscar"></button>
+            </form>
+          </li>
+        </ul>
+      </nav>
+      <div class="Perfil">
+      </div>
+      <img class="modo" src="/img/icones/Modo-escuro-light.svg" alt="modo-tela">
+    </div>
+  </header>
+
+  <main class="inicio">
+    <div class="picape-bg">
+      <h1>Onde a Potência Se <br> Une à Elegância</h1>
+      <p>Descubra o seu veículo</p>
+      <a class="button-utils" href="/">Ver mais</a>
+    </div>
+  </main>
+
+  <section id="search" class="filtro-de-busca text-16px">
+    <form class="forms-tipos">
+      <div class="div-bg">
+
+        <div class="campo">
+          <label for="combustivel">Tipo de Combustível</label>
+          <select id="combustivel" name="combustivel">
+            <option>Todos os Combustíveis</option>
+            <option value="gasolina">gasolina</option>
+            <option value="etanol">etanol</option>
+            <option value="Híbrido">Híbrido</option>
+            <option value="Elétrico">Elétrico</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="modelo">Modelos</label>
+          <select id="modelo" name="modelo">
+            <option>Todos os modelos</option>
+            <option value="SUVs">SUVs</option>
+            <option value="picapes">Picapes</option>
+            <option value="Esportivos">Esportivos</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="preco">Faixa de Preço</label>
+          <select id="preco" name="preco">
+            <option>Qualquer valor</option>
+            <option value="500000">R$25.000 a R$50.000</option>
+            <option value="500001">R$50.001 a R$99.999</option>
+            <option value="100000">R$100.000 a R$300.000</option>
+          </select>
+        </div>
+
+        <button class="button-search button-utils" type="submit">Buscar</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="section-destaques">
+    <h2 class="text-64px">DESTAQUES DO MÊS</h2>
+    <div class="Destaques">
+      <div class="lista-destaques">
+        <a href="./main.html">
+          <img src="/img/carros/carro-branco-card.png" alt="carroBranco">
+          <h3 class="cor-branca">Mustang GT 5.0</h3>
+          <p class="cor-cinza">2023 <span></span> 0km</p>
+          <div class="preco-detalhes">
+            <p class="cor-branca">R$ 529.000</p>
+            <button class="btn-detalhes">+ DETALHES</button>
+          </div>
+        </a>
+      </div>
+      <div class="lista-destaques">
+        <a href="./main.html">
+          <img src="/img/carros/carro-verde-card.png" alt="carroVerde">
+          <h3 class="cor-branca">Ford Maverick</h3>
+          <p class="cor-cinza">2024 <span></span> 0km</p>
+          <div class="preco-detalhes">
+            <p class="cor-branca">R$ 240.000</p>
+            <button class="btn-detalhes">+ DETALHES</button>
+          </div>
+        </a>
+      </div>
+      <div class="lista-destaques">
+        <a href="./main.html">
+          <img src="/img/carros/carro-amarelo-card.png" alt="carroAmarelo">
+          <h3 class="cor-branca">Mustang Mach-E</h3>
+          <p class="cor-cinza">2023 <span></span> 0km</p>
+          <div class="preco-detalhes">
+            <p class="cor-branca">R$ 486.000</p>
+            <button class="btn-detalhes">+ DETALHES</button>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
