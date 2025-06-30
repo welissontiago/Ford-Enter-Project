@@ -25,3 +25,19 @@
   font-weight: 600;
   line-height: normal;
 }
+
+.text-36px {
+  color: #b6b8b9;
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.text-24px-azul {
+  color: #e9faff;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+}

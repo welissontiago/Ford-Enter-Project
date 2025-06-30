@@ -1,0 +1,41 @@
+.parceiros {
+  padding-top: 60px;
+  padding-bottom: 120px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.parceiros span {
+  color: coral;
+}
+
+.parceiros h1 {
+  margin-bottom: 60px;
+  margin-left: 250px;
+}
+
+.parceiros ul {
+  padding: 0px 30px;
+  display: grid;
+  max-width: 1500px;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+}
+
+.parceiros li {
+  display: flex;
+  padding: 32px;
+  border-left: 1px solid #d9d9d9;
+}
+
+.parceiros li:first-child,
+.parceiros li:nth-child(5) {
+  border-left: none;
+}
+
+.parceiros li:nth-child(n + 5) {
+  border-top: 1px solid #d9d9d9;
+}
+
+.parceiros img {
+  margin: auto;
+}
