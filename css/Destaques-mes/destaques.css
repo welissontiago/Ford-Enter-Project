@@ -205,7 +205,7 @@ span {
 }
 
 .preco-detalhes p {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
@@ -252,4 +252,38 @@ span {
 .lista-destaques:hover .btn-detalhes {
   opacity: 1;
   visibility: visible;
+}
+
+@media (max-width: 500px) {
+  .preco-detalhes p {
+    font-size: 1rem;
+  }
+  .section-destaques h2 {
+    font-size: 2rem;
+  }
+  .lista-destaques img {
+    width: 300px;
+    height: 220px;
+  }
+  .lista-destaques a:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 5px;
+    background-color: #ff9600;
+    position: absolute;
+    top: 220px;
+    transition: width 0.3s ease-in-out;
+  }
+  .preco-detalhes {
+    margin-right: 0px;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .lista-destaques img {
+    max-width: 100%;
+    max-height: 100%;
+  }
 }

@@ -24,7 +24,7 @@
 }
 
 .container-menor {
-  padding: 100px 80px;
+  padding: 60px 80px;
   border-radius: 6px;
   border: 1px solid #272727;
   background: #1a1a1a;
@@ -35,8 +35,8 @@
   transition: 0.3s;
   flex-grow: 0;
   flex-shrink: 1;
-  flex-basis: calc((100% - 700px) / 3);
-  min-width: 320px;
+  flex-basis: calc((100% - 600px) / 3);
+  min-width: 200px;
 }
 
 .container-menor p {
@@ -76,4 +76,23 @@
 
 .container-menor:hover .icone-ford {
   fill: #ff9600;
+}
+
+@media (max-width: 850px) {
+  .beneficios h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 650px) {
+  .beneficios h1 {
+    font-size: 2rem;
+  }
+  .container-menor {
+    flex-basis: calc((100% - 500px) / 3);
+    min-width: 200px;
+    padding: 60px 80px;
+  }
 }

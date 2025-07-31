@@ -72,3 +72,15 @@
   object-fit: contain;
   opacity: 0;
 }
+
+@media (max-width: 625px) {
+  .parceiros h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 453px) {
+  .parceiros h1 {
+    font-size: 2rem;
+  }
+}

@@ -83,3 +83,128 @@
   font-weight: 300;
   text-decoration: none;
 } */
+
+.links-faceis {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.footer-container-menor {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.footer-container a {
+  color: #b6b8b9;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.48px;
+}
+
+.footer-container a:hover {
+  color: #ff9600;
+  transition: width 0.3s ease-in-out;
+}
+
+.lista-Veiculos ul {
+  margin-top: 15px;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.lista-Comprar ul {
+  margin-top: 15px;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.lista-Servicos h3 {
+  text-align: center;
+  margin-right: 50px;
+}
+
+.lista-Servicos ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 15px;
+  gap: 15px;
+}
+
+.lista-Sobre ul {
+  margin-top: 15px;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.redes-sociais ul {
+  display: flex;
+  gap: 30px;
+  margin-left: 150px;
+  flex-wrap: wrap;
+}
+
+.links-termos {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 150px;
+}
+
+.termos-nav {
+  display: flex;
+  gap: 30px;
+}
+
+.links-termos p,
+.links-termos a {
+  color: #bfc1c2;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+@media (max-width: 765px) {
+  .footer-container-menor {
+    padding: 20px 20px;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 737px) {
+  .footer-container-menor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 30px;
+  }
+  .redes-sociais ul {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    margin-left: 0px;
+  }
+  .links-termos {
+    padding: 0px;
+    margin-top: 40px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 417px) {
+  .footer-container a {
+    font-size: 0.7rem;
+  }
+}

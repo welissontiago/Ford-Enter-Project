@@ -2,9 +2,10 @@
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr;
-  width: 100%;
+  max-width: 100%;
   height: 1000px;
   background: lightgray 6.559px -86.711px / 100% 124.883% no-repeat url(/img/carros/tremor.png);
+  object-fit: cover;
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -24,4 +25,10 @@
   font-style: normal;
   font-weight: 300;
   text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .picape-bg h1 {
+    font-size: 4rem;
+  }
 }

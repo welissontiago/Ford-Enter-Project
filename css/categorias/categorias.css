@@ -129,10 +129,8 @@
   max-width: 100%;
   background-size: cover;
   background-position: center;
-}
-
-.categorias-bg .suv:hover {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-repeat: no-repeat;
+  background-color: #333333;
 }
 
 .categorias-bg .picapes {
@@ -140,10 +138,8 @@
   max-width: 100%;
   background-size: cover;
   background-position: center;
-}
-
-.categorias-bg .picapes:hover {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-repeat: no-repeat;
+  background-color: #333333;
 }
 
 .categorias-bg .esportivos {
@@ -151,8 +147,52 @@
   max-width: 100%;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-color: #333333;
 }
 
-.categorias-bg .esportivos:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+@media (max-width: 1000px) {
+  .categorias-bg .esportivos {
+    background-size: contain;
+  }
+  .categorias-bg .picapes {
+    background-size: contain;
+  }
+  .categorias-bg .suv {
+    background-size: contain;
+  }
+  .lista-categoria:after {
+    display: none;
+  }
+  .container-dos-cards {
+    gap: 15px;
+  }
+  .lista-categoria {
+    padding: 70px;
+  }
+}
+
+@media (max-width: 925px) {
+  .categorias-bg h1 {
+    font-size: 3rem;
+  }
+  .categorias-bg p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 625px) {
+  .categorias-bg h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+  .categorias-bg p {
+    font-size: 1rem;
+  }
+  .lista-categoria {
+    padding: 40px;
+  }
+  .lista-categoria h2 {
+    font-size: 2rem;
+  }
 }
