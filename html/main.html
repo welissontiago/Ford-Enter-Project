@@ -18,7 +18,7 @@
 <body>
   <header class="header-bg">
     <div class="header">
-      <a href="./"><img class="logo" src="/img/logo/ford_logo_cortada.png" alt="logo"></a>
+      <a href="./"><img class="logo-principal" src="/img/logo/ford_logo_cortada.png" alt="logo"></a>
       <nav aria-label="primaria">
         <ul class="header-menu">
           <li><a href="/">Veículos</a></li>
@@ -52,7 +52,6 @@
   <section id="search" class="filtro-de-busca text-16px">
     <form class="forms-tipos">
       <div class="div-bg">
-
         <div class="campo">
           <label for="combustivel">Tipo de Combustível</label>
           <select id="combustivel" name="combustivel">
@@ -146,7 +145,7 @@
     </div>
   </section>
 
-  <section class="parceiros" aria-label="Nossos Parceiros">
+  <!-- <section class="parceiros" aria-label="Nossos Parceiros">
     <h1 class="text-64px">Nossos Parceiros<span>.</span></h1>
     <ul>
       <li><img src="/img/empresas-parceiras-svg/rede cidada.svg" alt="RedeCidada"></li>
@@ -158,9 +157,43 @@
       <li><img src="/img/empresas-parceiras-svg/SK ON.c6b5ded2 1.svg" alt="SkOn"></li>
       <li><img src="/img/empresas-parceiras-svg/Logotipo_da_Caoa.svg 1.svg" alt="Caoa"></li>
     </ul>
+  </section> -->
+
+  <section class="parceiros" aria-label="Nossos Parceiros">
+    <h1 class="text-64px">Nossos Parceiros<span>.</span></h1>
+    <div class="brands-inner">
+      <div class="brands-columns">
+        <div class="brands-colums column-1">
+          <div class="logo-slot" data-initial-delay="0">
+            <img src="/img/empresas-parceiras-svg/amazon 1.svg" class="logo" alt="Amazon" data-from-direction="top" />
+            <img src="/img/empresas-parceiras-svg/BlueOval_SK_NoArc_Screen_RGB_v1 1.svg" class="logo" alt="BlueOval" data-from-direction="left" />
+            <img src="/img/empresas-parceiras-svg/cimatec 1.svg" class="logo" alt="Senai" data-from-direction="bottom" />
+          </div>
+        </div>
+
+        <div class="brand-column column-2">
+          <div class="logo-slot" data-initial-delay="0.2">
+            <img src="/img/empresas-parceiras-svg/Google_2015_logo.svg 1.svg" class="logo" alt="Google" data-from-direction="right" />
+            <img src="/img/empresas-parceiras-svg/Logotipo_da_Caoa.svg 1.svg" class="logo" alt="Caoa" data-from-direction="top" />
+            <img src="/img/empresas-parceiras-svg/red bull 2 1.svg" class="logo" alt="RedBull" data-from-direction="left" />
+          </div>
+        </div>
+
+        <div class="brand-column column-3">
+          <div class="logo-slot" data-initial-delay="0.4">
+            <img src="/img/empresas-parceiras-svg/rede cidada.svg" class="logo" alt="RedeCidada" data-from-direction="top" />
+            <img src="/img/empresas-parceiras-svg/SK ON.c6b5ded2 1.svg" class="logo" alt="SkOn" data-from-direction="right" />
+            <img src="/img/empresas-parceiras-svg/continental.svg" class="logo" alt="Continental" data-from-direction="bottom" />
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
+
+
   <article class="beneficios" aria-label="Alguns Beneficios">
+    <h1 class="text-64px">Nossos Beneficios</h1>
     <div class="beneficios-container">
       <div class="container-menor">
         <svg class="icone-ford" width="42" height="52" viewBox="0 0 42 52" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -276,6 +309,10 @@
       </div>
     </div>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="../js/parceiros.js"></script>
 </body>
 
 </html>

@@ -1,9 +1,14 @@
-.categorias-bg {
+.nav-categorias {
   background: #333333;
+}
+
+.categorias-bg {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 60px 20px;
+  justify-content: center;
+  padding: 60px 50px;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .categorias-bg p {
@@ -23,11 +28,11 @@
 }
 
 .lista-categoria {
-  flex: 1;
+  box-sizing: border-box;
+  padding: 100px 0px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 130px 450px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,6 +126,9 @@
 
 .categorias-bg .suv {
   background-image: url(/img/carros/SUVs.png);
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .categorias-bg .suv:hover {
@@ -129,6 +137,9 @@
 
 .categorias-bg .picapes {
   background-image: url(/img/carros/picape.png);
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .categorias-bg .picapes:hover {
@@ -137,6 +148,9 @@
 
 .categorias-bg .esportivos {
   background-image: url(/img/carros/Esportivo.png);
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .categorias-bg .esportivos:hover {
