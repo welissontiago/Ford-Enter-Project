@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site de estudos da ford">
+  <title>Pagina Principal</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header-bg">
+    <div class="header">
+      <a href="./"><img class="logo-principal" src="/img/logo/ford_logo_cortada.png" alt="logo"></a>
+      <nav aria-label="primaria">
+        <ul class="header-menu">
+          <li><a href="/">Veículos</a></li>
+          <li><a href="/">Ofertas</a></li>
+          <li><a href="/">Comprar</a></li>
+          <li><a href="/">Serviços</a></li>
+          <li><a href="/">FordPro</a></li>
+          <li><a href="/">Iniciar Sessão</a></li>
+          <li>
+            <form class="form-busca" action="/buscar" method="get">
+              <input type="text" id="busca" name="q" placeholder="Pesquisar Veiculos" />
+              <button class="btn-busca" type="submit" aria-label="Buscar"></button>
+            </form>
+          </li>
+        </ul>
+      </nav>
+      <div class="Perfil">
+      </div>
+      <img class="modo" src="/img/icones/Modo-escuro-light.svg" alt="modo-tela">
+    </div>
+  </header>
+
+  <main class="inicio">
+    <div class="picape-bg">
+      <h1>Onde a Potência Se <br> Une à Elegância</h1>
+      <p>Descubra o seu veículo</p>
+      <a class="button-utils" href="/">Ver mais</a>
+    </div>
+  </main>
+
+  <section id="search" class="filtro-de-busca text-16px">
+    <form class="forms-tipos">
+      <div class="div-bg">
+        <div class="campo">
+          <label for="combustivel">Tipo de Combustível</label>
+          <select id="combustivel" name="combustivel">
+            <option>Todos os Combustíveis</option>
+            <option value="gasolina">gasolina</option>
+            <option value="etanol">etanol</option>
+            <option value="Híbrido">Híbrido</option>
+            <option value="Elétrico">Elétrico</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="modelo">Modelos</label>
+          <select id="modelo" name="modelo">
+            <option>Todos os modelos</option>
+            <option value="SUVs">SUVs</option>
+            <option value="picapes">Picapes</option>
+            <option value="Esportivos">Esportivos</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="preco">Faixa de Preço</label>
+          <select id="preco" name="preco">
+            <option>Qualquer valor</option>
+            <option value="500000">R$25.000 a R$50.000</option>
+            <option value="500001">R$50.001 a R$99.999</option>
+            <option value="100000">R$100.000 a R$300.000</option>
+          </select>
+        </div>
+
+        <button class="button-search button-utils" type="submit">Buscar</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="section-destaques" aria-label="Carros em destaques">
+    <h2 class="text-64px">DESTAQUES DO MÊS</h2>
+    <div class="Destaques">
+      <div class="lista-destaques">
+        <a href="./main.html">
+          <img src="/img/carros/carro-branco-card.png" alt="carroBranco">
+          <h3 class="cor-branca">Mustang GT 5.0</h3>
+          <p class="cor-cinza">2023 <span></span> 0km</p>
+          <div class="preco-detalhes">
+            <p class="cor-branca">R$ 529.000</p>
+            <button class="btn-detalhes">+ DETALHES</button>
+          </div>
+        </a>
+      </div>
+      <div class="lista-destaques">
+        <a href="./main.html">
+          <img src="/img/carros/carro-verde-card.png" alt="carroVerde">
+          <h3 class="cor-branca">Ford Maverick</h3>
+          <p class="cor-cinza">2024 <span></span> 0km</p>
+          <div class="preco-detalhes">
+            <p class="cor-branca">R$ 240.000</p>
+            <button class="btn-detalhes">+ DETALHES</button>
+          </div>
+        </a>
+      </div>
+      <div class="lista-destaques">
+        <a href="./main.html">
+          <img src="/img/carros/carro-amarelo-card.png" alt="carroAmarelo">
+          <h3 class="cor-branca">Mustang Mach-E</h3>
+          <p class="cor-cinza">2023 <span></span> 0km</p>
+          <div class="preco-detalhes">
+            <p class="cor-branca">R$ 486.000</p>
+            <button class="btn-detalhes">+ DETALHES</button>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="nav-categorias" aria-label="Categorias de Carros">
+    <div class="categorias-bg">
+      <h1 class="text-64px">NAVEGAR POR CATEGORIA</h1>
+      <p class="text-36px">Encontre o veículo perfeito para seu estilo</p>
+      <div class="container-dos-cards">
+        <div class="lista-categoria suv">
+          <h2 class="text-64px">SUVs</h2>
+        </div>
+        <div class="lista-categoria picapes">
+          <h2 class="text-64px">Picapes</h2>
+        </div>
+        <div class="lista-categoria esportivos">
+          <h2 class="text-64px">Esportivos</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="parceiros" aria-label="Nossos Parceiros">
+    <h1 class="text-64px">Nossos Parceiros<span>.</span></h1>
+    <ul>
+      <li><img src="/img/empresas-parceiras-svg/rede cidada.svg" alt="RedeCidada"></li>
+      <li><img src="/img/empresas-parceiras-svg/cimatec 1.svg" alt="Senai"></li>
+      <li><img src="/img/empresas-parceiras-svg/amazon 1.svg" alt="Amazon"></li>
+      <li><img src="/img/empresas-parceiras-svg/Google_2015_logo.svg 1.svg" alt="Google"></li>
+      <li><img src="/img/empresas-parceiras-svg/red bull 2 1.svg" alt="RedBull"></li>
+      <li><img src="/img/empresas-parceiras-svg/BlueOval_SK_NoArc_Screen_RGB_v1 1.svg" alt="BlieOval"></li>
+      <li><img src="/img/empresas-parceiras-svg/SK ON.c6b5ded2 1.svg" alt="SkOn"></li>
+      <li><img src="/img/empresas-parceiras-svg/Logotipo_da_Caoa.svg 1.svg" alt="Caoa"></li>
+    </ul>
+  </section> -->
+
+  <section class="parceiros" aria-label="Nossos Parceiros">
+    <h1 class="text-64px">Nossos Parceiros<span>.</span></h1>
+    <div class="brands-inner">
+      <div class="brands-columns">
+        <div class="brands-colums column-1">
+          <div class="logo-slot" data-initial-delay="0">
+            <img src="/img/empresas-parceiras-svg/amazon 1.svg" class="logo" alt="Amazon" data-from-direction="top" />
+            <img src="/img/empresas-parceiras-svg/BlueOval_SK_NoArc_Screen_RGB_v1 1.svg" class="logo" alt="BlueOval" data-from-direction="left" />
+            <img src="/img/empresas-parceiras-svg/cimatec 1.svg" class="logo" alt="Senai" data-from-direction="bottom" />
+          </div>
+        </div>
+
+        <div class="brand-column column-2">
+          <div class="logo-slot" data-initial-delay="0.2">
+            <img src="/img/empresas-parceiras-svg/Google_2015_logo.svg 1.svg" class="logo" alt="Google" data-from-direction="right" />
+            <img src="/img/empresas-parceiras-svg/Logotipo_da_Caoa.svg 1.svg" class="logo" alt="Caoa" data-from-direction="top" />
+            <img src="/img/empresas-parceiras-svg/red bull 2 1.svg" class="logo" alt="RedBull" data-from-direction="left" />
+          </div>
+        </div>
+
+        <div class="brand-column column-3">
+          <div class="logo-slot" data-initial-delay="0.4">
+            <img src="/img/empresas-parceiras-svg/rede cidada.svg" class="logo" alt="RedeCidada" data-from-direction="top" />
+            <img src="/img/empresas-parceiras-svg/SK ON.c6b5ded2 1.svg" class="logo" alt="SkOn" data-from-direction="right" />
+            <img src="/img/empresas-parceiras-svg/continental.svg" class="logo" alt="Continental" data-from-direction="bottom" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <article class="beneficios" aria-label="Alguns Beneficios">
+    <h1 class="text-64px">Nossos Beneficios</h1>
+    <div class="beneficios-container">
+      <div class="container-menor">
+        <svg class="icone-ford" width="42" height="52" viewBox="0 0 42 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <title>Ícone Ford Protect</title>
+          <path d="M41.3213 7.75879V23.5088C41.3212 30.0504 39.3734 36.0002 35.4785 41.3584C31.5843 46.7156 26.6471 50.1467 20.667 51.6533C14.6866 50.1468 9.74882 46.7158 5.85449 41.3584C1.95964 36.0002 0.0127854 30.0503 0.0126953 23.5088V7.75781L20.666 0.0126953L41.3213 7.75879ZM20.6621 5.47754L5.1543 11.293V24.6709C5.1543 24.9733 5.19703 25.362 5.2832 25.8359L5.28516 25.8457H20.6543V46.2588L20.6699 46.2539C24.8491 44.9614 28.3396 42.4081 31.1396 38.5957C33.9393 34.7837 35.5759 30.5299 36.0498 25.835L36.0518 25.8213H20.6787V5.47168L20.6621 5.47754Z" stroke-width="0.025" />
+        </svg>
+        <h2 class="text-24px-azul">Ford Protect</h2>
+        <p class="text-16px">Plano de Revisões Pré-Adquiridas,
+          Garantia Estendida e Manutenção
+          Premium para o seu Ford.</p>
+      </div>
+      <div class="container-menor">
+        <svg class="icone-ford" width="44" height="40" viewBox="0 0 44 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19.8333 39.5V35.1667H37.1667V19.7833C37.1667 15.5583 35.6951 11.9743 32.7521 9.03125C29.809 6.08819 26.225 4.61667 22 4.61667C17.775 4.61667 14.191 6.08819 11.2479 9.03125C8.30486 11.9743 6.83333 15.5583 6.83333 19.7833V33H4.66667C3.475 33 2.45486 32.5757 1.60625 31.7271C0.757639 30.8785 0.333333 29.8583 0.333333 28.6667V24.3333C0.333333 23.575 0.522916 22.8618 0.902083 22.1938C1.28125 21.5257 1.81389 20.9931 2.5 20.5958L2.6625 17.725C2.95139 15.2694 3.66458 12.9944 4.80208 10.9C5.93958 8.80556 7.36597 6.98194 9.08125 5.42917C10.7965 3.87639 12.7646 2.66667 14.9854 1.8C17.2062 0.933333 19.5444 0.5 22 0.5C24.4556 0.5 26.7847 0.933333 28.9875 1.8C31.1903 2.66667 33.1583 3.86736 34.8917 5.40208C36.625 6.93681 38.0514 8.75139 39.1708 10.8458C40.2903 12.9403 41.0125 15.2153 41.3375 17.6708L41.5 20.4875C42.1861 20.8125 42.7187 21.3 43.0979 21.95C43.4771 22.6 43.6667 23.2861 43.6667 24.0083V28.9917C43.6667 29.7139 43.4771 30.4 43.0979 31.05C42.7187 31.7 42.1861 32.1875 41.5 32.5125V35.1667C41.5 36.3583 41.0757 37.3785 40.2271 38.2271C39.3785 39.0757 38.3583 39.5 37.1667 39.5H19.8333ZM15.5 24.3333C14.8861 24.3333 14.3715 24.1257 13.9562 23.7104C13.541 23.2951 13.3333 22.7806 13.3333 22.1667C13.3333 21.5528 13.541 21.0382 13.9562 20.6229C14.3715 20.2076 14.8861 20 15.5 20C16.1139 20 16.6285 20.2076 17.0437 20.6229C17.459 21.0382 17.6667 21.5528 17.6667 22.1667C17.6667 22.7806 17.459 23.2951 17.0437 23.7104C16.6285 24.1257 16.1139 24.3333 15.5 24.3333ZM28.5 24.3333C27.8861 24.3333 27.3715 24.1257 26.9562 23.7104C26.541 23.2951 26.3333 22.7806 26.3333 22.1667C26.3333 21.5528 26.541 21.0382 26.9562 20.6229C27.3715 20.2076 27.8861 20 28.5 20C29.1139 20 29.6285 20.2076 30.0437 20.6229C30.459 21.0382 30.6667 21.5528 30.6667 22.1667C30.6667 22.7806 30.459 23.2951 30.0437 23.7104C29.6285 24.1257 29.1139 24.3333 28.5 24.3333ZM9.05417 20.975C8.80139 17.1472 9.95694 13.8611 12.5208 11.1167C15.0847 8.37222 18.2806 7 22.1083 7C25.3222 7 28.1479 8.02014 30.5854 10.0604C33.0229 12.1007 34.4944 14.7097 35 17.8875C31.7139 17.8514 28.6896 16.9667 25.9271 15.2333C23.1646 13.5 21.0431 11.1528 19.5625 8.19167C18.9847 11.0806 17.766 13.6535 15.9062 15.9104C14.0465 18.1674 11.7625 19.8556 9.05417 20.975Z" stroke-width="0.025" />
+        </svg>
+        <h2 class="text-24px-azul">Ford Assistance 24 Horas</h2>
+        <p class="text-16px">Aproveite o serviço de assistência
+          integral gratuito disponível 24 horas
+          por dia, todos os dias do ano, durante
+          o primeiro ano do seu Ford.</p>
+      </div>
+      <div class="container-menor">
+        <svg class="icone-ford" width="45" height="43" viewBox="0 0 45 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M39.8875 42.875L26.8844 29.8719L31.8719 24.8844L44.875 37.8875L39.8875 42.875ZM7.1125 42.875L2.125 37.8875L18.5125 21.5L14.475 17.4625L12.8125 19.125L9.78438 16.0969V20.9657L8.12187 22.6282L0.9375 15.4438L2.6 13.7813H7.46875L4.5 10.8125L12.9312 2.3813C13.7229 1.58963 14.574 1.01567 15.4844 0.659424C16.3948 0.303174 17.325 0.125049 18.275 0.125049C19.225 0.125049 20.1552 0.303174 21.0656 0.659424C21.976 1.01567 22.8271 1.58963 23.6187 2.3813L18.1562 7.8438L21.125 10.8125L19.4625 12.475L23.5 16.5125L28.8438 11.1688C28.6854 10.7334 28.5568 10.2782 28.4578 9.80317C28.3589 9.32817 28.3094 8.85317 28.3094 8.37817C28.3094 6.04276 29.1109 4.07349 30.7141 2.47036C32.3172 0.867236 34.2865 0.0656738 36.6219 0.0656738C37.2156 0.0656738 37.7797 0.125049 38.3141 0.243799C38.8484 0.362549 39.3927 0.540674 39.9469 0.778174L34.0687 6.6563L38.3438 10.9313L44.2219 5.05317C44.499 5.60734 44.687 6.15161 44.7859 6.68599C44.8849 7.22036 44.9344 7.78442 44.9344 8.37817C44.9344 10.7136 44.1328 12.6829 42.5297 14.286C40.9266 15.8891 38.9573 16.6907 36.6219 16.6907C36.1469 16.6907 35.6719 16.6511 35.1969 16.5719C34.7219 16.4928 34.2667 16.3542 33.8312 16.1563L7.1125 42.875Z" stroke-width="0.025" />
+        </svg>
+        <h2 class="text-24px-azul">Peças Originais</h2>
+        <p class="text-16px">Ao escolher peças Motorcraft ou
+          Omnicraft, você garante a Qualidade e
+          Segurança recomendadas pela Ford.</p>
+      </div>
+    </div>
+  </article>
+
+  <footer class="links-faceis" aria-label="rodape">
+    <div class="footer-container">
+      <div class="footer-container-menor">
+        <div class="logo-footer">
+          <img src="/img/logo/ford_logo_cortada.png" alt="logo-ford">
+        </div>
+        <div class="lista-Veiculos">
+          <h3 class="text-24px">Veiculos</h3>
+          <ul>
+            <li><a href="./main.html">Picapes</a></li>
+            <li><a href="./main.html">SUVs</a></li>
+            <li><a href="./main.html">Performance</a></li>
+            <li><a href="./main.html">Eletricos</a></li>
+            <li><a href="./main.html">Comerciais</a></li>
+            <li><a href="./main.html">Futuros Lançamentos</a></li>
+          </ul>
+        </div>
+        <div class="lista-Comprar">
+          <h3 class="text-24px">Comprar</h3>
+          <ul>
+            <li><a href="./main.html">Monter o seu</a></li>
+            <li><a href="./main.html">Ofertas</a></li>
+            <li><a href="./main.html">Concessionárias</a></li>
+            <li><a href="./main.html">Serviços Financeiros</a></li>
+            <li><a href="./main.html">Simule seu Financiamento</a></li>
+            <li><a href="./main.html">Plano Ford Sempre</a></li>
+          </ul>
+        </div>
+        <div class="lista-Servicos">
+          <h3 class="text-24px">Serviços</h3>
+          <ul>
+            <li><a href="./main.html">Atualização SYNC®</a></li>
+            <li><a href="./main.html">Proprietários</a></li>
+            <li><a href="./main.html">Tutoriais (Guia 360)</a></li>
+            <li><a href="./main.html">Recall</a></li>
+            <li><a href="./main.html">Ford Protect</a></li>
+            <li><a href="./main.html">Garantia Ford</a></li>
+            <li><a href="./main.html">Serviço Leva e Traz</a></li>
+            <li><a href="./main.html">Aplicativo FordPass TM</a></li>
+            <li><a href="./main.html">Blindagem Certificada</a></li>
+            <li><a href="./main.html">Assistência de Emergência</a></li>
+            <li><a href="./main.html">Revisões Ford </a></li>
+            <li><a href="./main.html">Agende seu Serviço</a></li>
+            <li><a href="./main.html">Reparador Ford</a></li>
+            <li><a href="./main.html">Ford PRO™</a></li>
+          </ul>
+        </div>
+        <div class="lista-Sobre">
+          <h3 class="text-24px">Sobre a Ford</h3>
+          <ul>
+            <li><a href="./main.html">Carreiras</a></li>
+            <li><a href="./main.html">Programa de Estágio</a></li>
+            <li><a href="./main.html">Ford Enter</a></li>
+            <li><a href="./main.html">Ford Global</a></li>
+            <li><a href="./main.html">Notícias</a></li>
+            <li><a href="./main.html">Segurança Veicular</a></li>
+            <li><a href="./main.html">Fale Conosco</a></li>
+            <li><a href="./main.html">Relatório de transparência e <br>
+                igualdade salarial</a></li>
+            <li><a href="./main.html">Cartões de Resgate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="redes-sociais">
+        <ul>
+          <li><a href="./main.html">Facebook</a></li>
+          <li><a href="./main.html">Instagram</a></li>
+          <li><a href="./main.html">Tiktok</a></li>
+          <li><a href="./main.html">Linkedin</a></li>
+          <li><a href="./main.html">Youtube</a></li>
+        </ul>
+      </div>
+
+      <div class="links-termos">
+        <p>© 2025 Uelisson Tiago. Todos os direitos reservados</p>
+        <div class="termos-nav">
+          <a href="./">Política de Privacidade</a>
+          <a href="">Termos de Uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="../js/parceiros.js"></script>
+</body>
+
+</html>

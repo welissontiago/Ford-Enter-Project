@@ -1,0 +1,85 @@
+/* .footer-container a {
+  color: #b6b8b9;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.48px;
+}
+
+.links-faceis {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.footer-container-menor {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 150px;
+}
+
+.lista-Veiculos ul {
+  margin-top: 15px;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container a:hover {
+  color: #ff9600;
+  transition: width 0.3s ease-in-out;
+}
+
+.lista-Comprar ul {
+  margin-top: 15px;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.lista-Servicos h3 {
+  text-align: center;
+  margin-right: 50px;
+}
+
+.lista-Servicos ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 15px;
+  gap: 15px;
+}
+
+.lista-Sobre ul {
+  margin-top: 15px;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.redes-sociais ul {
+  display: flex;
+  gap: 30px;
+  margin-left: 150px;
+}
+
+.links-termos {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 150px;
+}
+
+.termos-nav {
+  display: flex;
+  gap: 30px;
+}
+
+.links-termos p,
+.links-termos a {
+  color: #bfc1c2;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  text-decoration: none;
+} */

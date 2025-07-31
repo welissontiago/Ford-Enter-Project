@@ -1,0 +1,255 @@
+/* .Destaques {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 150px;
+  justify-items: center;
+}
+
+.section-destaques h2 {
+  margin: 0px;
+  text-align: center;
+  margin-top: 50px;
+  position: relative;
+}
+
+.section-destaques h2:after {
+  content: "";
+  width: 118px;
+  height: 6px;
+  background-color: #ff9600;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.lista-destaques {
+  background-color: #333333;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.lista-destaques a {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+  padding-bottom: 35px;
+  position: relative;
+}
+
+.lista-destaques img {
+  width: 394px;
+  height: 324px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.lista-destaques a:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 5px;
+  background-color: #ff9600;
+  position: absolute;
+  top: 320px;
+  transition: width 0.3s ease-in-out;
+}
+
+.lista-destaques:hover a::after {
+  width: 100%;
+}
+
+.lista-destaques h3,
+p {
+  margin-left: 30px;
+}
+
+.lista-destaques p,
+span {
+  font-family: Poppins;
+}
+
+.lista-destaques:hover h3 {
+  color: #f90;
+}
+
+.preco-detalhes p {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.lista-destaques p span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #d9d9d9;
+  vertical-align: middle;
+  margin: 0 8px;
+}
+
+.lista-destaques:hover {
+  transform: scale(1.15);
+}
+
+.preco-detalhes {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 70px;
+  margin-right: 20px;
+}
+
+.btn-detalhes {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  background: #f90;
+  padding: 10px 20px;
+  border: 1px solid #f90;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.btn-detalhes:hover {
+  background-color: #ffbd2d;
+}
+
+.lista-destaques:hover .btn-detalhes {
+  opacity: 1;
+  visibility: visible;
+} */
+
+.section-destaques h2 {
+  text-align: center;
+  position: relative;
+  margin-top: 50px;
+}
+
+.section-destaques h2:after {
+  content: "";
+  width: 118px;
+  height: 6px;
+  background-color: #ff9600;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Destaques {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.lista-destaques {
+  background-color: #333333;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.lista-destaques a {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+  padding-bottom: 35px;
+  position: relative;
+}
+
+.lista-destaques img {
+  width: 394px;
+  height: 324px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.lista-destaques a:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 5px;
+  background-color: #ff9600;
+  position: absolute;
+  top: 320px;
+  transition: width 0.3s ease-in-out;
+}
+
+.lista-destaques:hover a::after {
+  width: 100%;
+}
+
+.lista-destaques h3,
+p {
+  margin-left: 30px;
+}
+
+.lista-destaques p,
+span {
+  font-family: Poppins;
+}
+
+.lista-destaques:hover h3 {
+  color: #f90;
+}
+
+.preco-detalhes p {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.lista-destaques p span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #d9d9d9;
+  vertical-align: middle;
+  margin: 0 8px;
+}
+
+.lista-destaques:hover {
+  transform: scale(1.15);
+}
+
+.preco-detalhes {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 70px;
+  margin-right: 20px;
+}
+
+.btn-detalhes {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  background: #f90;
+  padding: 10px 20px;
+  border: 1px solid #f90;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.btn-detalhes:hover {
+  background-color: #ffbd2d;
+}
+
+.lista-destaques:hover .btn-detalhes {
+  opacity: 1;
+  visibility: visible;
+}
